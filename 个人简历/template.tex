@@ -1,0 +1,105 @@
+\newcommand{\customcvfontpath}{}
+\documentclass{customcv}
+
+% =========================================================================
+% 个人基本信息
+% =========================================================================
+\name{重}{小理}
+
+\begin{document}
+\makecvtitle
+\vspace*{-8mm}
+
+\begin{center}
+\textbf{（技术）产品经理} \\[0.25em]
+\small
+\faWeixin\enspace +86 199-9999-9999 \enspace{\color{color2!60}{|}}\enspace 
+\faEnvelope\enspace \texttt{example@cqut-osp.com} \enspace{\color{color2!60}{|}}\enspace 
+\faGithub\enspace \href{https://github.com/CQUT-OpenProject}{\color{linkcolor}\texttt{CQUT-OpenProject ↗}}
+\end{center}
+\vspace*{-0.4em}
+
+% =========================================================================
+% 教育经历
+% =========================================================================
+\section{教育经历}
+\customcventry{}{}{重庆理工大学（本科/大二在读）}{计算机科学与技术}{2024 - 预计2028}{%
+}
+
+% =========================================================================
+% 实习经历
+% =========================================================================
+\section{实习经历}
+
+\customcventry{}{}{知名科技有限责任公司}{AI 产品经理实习生「知识库与 Agent 方向」}{2025/06 - 2025/09}{%
+  \begin{itemize}
+    \item \textbf{需求分析与 PRD 撰写}：主导智能客服与 Copilot 工具优化，完成 5+ 核心功能模块的需求调研与高保真原型绘制，撰写标准 PRD 交付研发
+    \item \textbf{跨部门协作与敏捷推进}：对接算法与前后端团队，制定 Scrum 敏捷迭代计划，推动需求按期交付，上线后满意度评分 \highlight{提升 18\%}
+    \item \textbf{数据驱动与效果评估}：搭建 \highlight{埋点指标体系} 与大模型漏斗分析大屏，追踪 Agent 路径与首响应延迟，优化 Prompt 使得对话流失率 \highlight{降低 12\%}
+  \end{itemize}%
+}
+
+% =========================================================================
+% 项目经历
+% =========================================================================
+\section{项目经历}
+
+\customcventry{}{}{\texorpdfstring{\href{https://github.com/CQUT-OpenProject/example\#readme}{\color{linkcolor}Multi-Agent 智能文档分析与问答平台 ↗}}{Multi-Agent 智能文档分析与问答平台}}{Python FastAPI LangChain Next.js}{2025/09 - 2026/03}{%
+  \begin{itemize}
+    \item \textbf{项目背景}：针对跨部门文档知识检索效率低下、传统 RAG 幻觉高的问题，规划多智能体协作的知识检索系统；本人负责需求分析与产品方案设计，开发由团队协作完成
+    \item \textbf{项目功能}：\begin{minipage}[t]{\dimexpr\linewidth-5.6em\relax}\RaggedRight
+            \hangafter=1\hangindent=5.5em 「智能调度」设计 \highlight{Router Agent} 对用户提问分类，自动调度检索、代码执行与总结智能体 \par\addvspace{0.15em}
+            \hangafter=1\hangindent=5.5em 「精准检索」采用 \highlight{Hybrid Search} (Vector + BM25) 与 \highlight{Rerank 重排序}，支持混合索引与上下文切片预览 \par\addvspace{0.15em}
+            \hangafter=1\hangindent=5.5em 「看板管理」提供可视化 Prompt 调试工具与 Agent 执行轨迹（Trace）追踪面板
+          \end{minipage}
+    \item \textbf{上线表现}：内部上线试运行，问答准确率由传统 RAG 的 68\% \highlight{提升至 89\%}，检索 p95 响应延迟控制在 \highlight{1.5s} 内
+  \end{itemize}%
+}
+
+\customcventry{}{}{\texorpdfstring{\href{https://github.com/CQUT-OpenProject/example\#readme}{\color{linkcolor}轻量级 API 网关与服务监控系统 ↗}}{轻量级 API 网关与服务监控系统}}{Go Vue.js Docker Prometheus}{2025/03 - 2025/06}{%
+  \begin{itemize}
+    \item \textbf{项目背景}：针对多服务架构下接口鉴权繁琐、流量不可见的问题，规划微服务 API 网关管理平台；本人负责需求梳理与产品功能设计（路由 / 限流 / 鉴权 / 监控大屏），开发由团队协作完成
+    \item \textbf{项目功能}：\begin{minipage}[t]{\dimexpr\linewidth-5.6em\relax}\RaggedRight
+            \hangafter=1\hangindent=5.5em 「流量治理」支持动态路由配置、\highlight{Token Bucket 限流} 策略与 \highlight{JWT/OAuth2} 统一身份认证 \par\addvspace{0.15em}
+            \hangafter=1\hangindent=5.5em 「数据大屏」集成 \highlight{Prometheus 指标} 采集，设计直观的 \highlight{QPS/延迟/错误率} 实时监控大屏 \par\addvspace{0.15em}
+            \hangafter=1\hangindent=5.5em 「文档交互」自动解析 OpenAPI 3.0 规范，提供开箱即用的交互式 API 测试与调试环境
+          \end{minipage}
+    \item \textbf{上线表现}：已在校内实验室集群成功部署运行，承载 10+ 微服务接入，日均处理请求量 \highlight{达 50万+}（Prometheus 近 30 天滚动统计）
+  \end{itemize}%
+}
+
+\customcventry{}{}{\texorpdfstring{\href{https://github.com/CQUT-OpenProject/example\#readme}{\color{linkcolor}高校开源项目协作与代码评审平台 ↗}}{高校开源项目协作与代码评审平台}}{TypeScript React Node.js Tailwind}{2024/10 - 2025/02}{%
+  \begin{itemize}
+    \item \textbf{项目背景}：针对校园开源社团项目管理零散、代码质量参差不齐的痛点，构建集任务指派与自动 CI 于一体的协作平台；本人负责看板与评审流程的产品设计及方案选型，开发由团队协作完成
+    \item \textbf{项目功能}：\begin{minipage}[t]{\dimexpr\linewidth-5.6em\relax}\RaggedRight
+            \hangafter=1\hangindent=5.5em 「任务看板」设计 \highlight{Kanban 敏捷看板}，支持 Markdown 格式需求描述与里程碑（Milestone）管理 \par\addvspace{0.15em}
+            \hangafter=1\hangindent=5.5em 「在线评审」基于 \highlight{Web Worker} 实现大文件 Code Diff 高亮与行级评论通知 \par\addvspace{0.15em}
+            \hangafter=1\hangindent=5.5em 「自动流水线」接入 Webhook 实现 Pull Request 自动静态检查与代码风格合规校验
+          \end{minipage}
+    \item \textbf{上线表现}：吸引校内 5 个技术社团及 120+ 开发者使用，累计管理 40+ 项目，交付周期 \highlight{缩短约 30\%}（同期迭代平均耗时对比）
+  \end{itemize}%
+}
+
+% =========================================================================
+% 技能 & 特长
+% =========================================================================
+\clearpage
+\section{技能\&特长}
+\begin{itemize}
+    \item \textbf{产品设计与管理}：掌握需求分析、竞品调研与 \highlight{PRD 撰写}，熟练使用 \highlight{Figma / Axure} 绘制原型与流程图；熟悉 Scrum 敏捷开发流程与需求优先级评估 (\highlight{RICE 框架})
+    \item \textbf{AI \& 智能体工程}：熟练掌握 \highlight{RAG 与 Multi-Agent} 架构设计原则，具备基于 \highlight{LLM API / LangChain} 搭建原型能力；理解大模型评估方法，擅长弥合 AI 技术与业务场景落地
+    \item \textbf{技术栈与架构理解}：熟练使用 \highlight{Python / TypeScript / Rust}，熟悉 Docker 容器化部署、Git 版本控制与 RESTful API / gRPC 接口设计；具备基础云原生与微服务架构理解能力
+\end{itemize}
+
+% =========================================================================
+% 荣誉证书
+% =========================================================================
+\section{荣誉证书}
+\begin{itemize}
+  \item \textbf{CET-6}（600） / \textbf{CET-4}（650），具备良好的英文技术文档阅读与沟通能力
+  \item 全国大学生电子设计竞赛（2026）\highlight{国一等奖}
+  \item 全国大学生物联网设计竞赛（2026）市一等奖
+  \item 重庆市 AI 大模型创新应用大赛（2025）校一等奖
+\end{itemize}
+
+\end{document}

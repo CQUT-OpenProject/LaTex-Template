@@ -1,0 +1,120 @@
+\documentclass{../template/cqutest}
+
+\graphicspath{{../template/}}
+\university{重庆理工大学}
+\semester{2022～2023学年第1学期}
+\department{理学院}
+\course{概率论与数理统计 (理工)}
+\examtype{闭卷}
+\examtime{120}
+\papertype{C}
+
+\begin{document}
+
+% \enablewatermark % 注释本行可编译无水印版
+
+\exampart{一}{选择题}{本题共 10 个小题，每小题 2 分，共 20 分}
+\begin{examquestions}
+  \item 设事件 $A$ 与 $B$ 互不相容，且 $P(A)=0.4$，$P(A\cup B)=0.7$，则 $P(B)=$\choiceanswer{}
+    \choices{$0.2$}{$0.3$}{$0.4$}{$0.5$}
+
+  \item $P(A)\ne P(B)>0$，且 $B\subset A$，则下列命题成立的是\choiceanswer{}
+    \choices{$P(A\mid B)=1$}{$P(B\mid A)=1$}{$P(A\mid \overline{B})=0$}{$P(B\mid \overline{A})=1$}
+
+  \item 设 $P\{X=k\}=k^2a$，$P\{Y=-k\}=(k+1)b$，$k=-1,0,1$，则 $a,b$ 分别为\choiceanswer{}
+    \choices{$a=\frac13\quad b=\frac15$}{$a=\frac15\quad b=\frac13$}{$a=\frac12\quad b=\frac13$}{$a=\frac13\quad b=\frac12$}
+
+  \item 随机变量 $X$ 的密度函数 $f(x)=\dfrac{1}{\sqrt{2\pi}\sigma}e^{-\frac{(x-\mu)^2}{2\sigma^2}}$，$\sigma>0$，则下列说法错误的是\choiceanswer{}
+    \choicespair{$P\{X<\mu\}=\frac12$}{$P\{\mu-2\sigma<X<\mu+2\sigma\}$ 与 $\mu$、$\sigma$ 无关}{$E(X-\mu)=0$}{$D(X-\mu)=0$}
+
+  \item 已知随机变量 $X$ 的概率密度函数为 $f_X(x)$，则 $Y=3X-2$ 的概率密度函数 $f_Y(y)$ 为\choiceanswer{}
+    \choices{$f_X\!\left(\frac{y+2}{3}\right)$}{$\frac13f_X\!\left(\frac{y+2}{3}\right)$}{$f_X(3y-2)$}{$3f_X(3y-2)$}
+
+  \item 设 $(X,Y)$ 的联合概率密度为 $f(x,y)=\begin{cases}4xy,&0\le x\le1,\ 0\le y\le1,\\0,&\text{其他},\end{cases}$ 若 $F(x,y)$ 为分布函数，则 $F(0.5,2)=$\choiceanswer{}
+    \choices{$1$}{$\frac12$}{$\frac14$}{$0$}
+\end{examquestions}
+
+\newpage
+\begin{examquestions}[resume]
+  \item 若 $D(X\pm Y)=D(X)+D(Y)$，则下列结论成立的是\choiceanswer{}
+    \choices{$X$ 与 $Y$ 一定相关}{$X$ 与 $Y$ 一定独立}{$X$ 与 $Y$ 一定不相关}{$X$ 与 $Y$ 一定不独立}
+
+  \item 设 $X\sim b(n,p)$，则有\choiceanswer{}
+    \choices{$E(2X-1)=2np$}{$D(2X+1)=4np(1-p)+1$}{$E(2X+1)=4np+1$}{$D(2X-1)=4np(1-p)$}
+
+  \item 设 $X_1,X_2,\ldots,X_n$ 是来自正态总体 $N(\mu,\sigma^2)$ 的一个简单随机样本，其中 $\mu$ 已知，$\sigma^2$ 未知，则下列不是统计量的是\choiceanswer{}
+    \choicesinline{$\displaystyle\frac1n\sum_{i=1}^n(X_i-\bar X)^2$}{$\displaystyle\frac1\sigma\sum_{i=1}^nX_i$}{$\displaystyle\frac1{n-1}\sum_{i=1}^n(X_i-\mu)^2$}{$\displaystyle\frac1n\sum_{i=1}^n(X_i-\mu)^2$}
+
+  \item 设 $X_1,X_2,X_3,X_4$ 是总体 $X$ 的简单随机样本，$\frac13X_1+kX_2+\frac19X_3+\frac7{18}X_4$ 为总体均值的无偏估计，则 $k=$\choiceanswer{}
+    \choices{$\frac15$}{$\frac16$}{$\frac17$}{$\frac18$}
+\end{examquestions}
+
+\exampart{二}{填空题}{本大题共 10 个小题，每空 2 分，共 20 分}
+\begin{examquestions}[resume]
+  \item 设 $A,B,C$ 表示三个随机事件，则事件“$A,B,C$ 至多有一个不发生”可表示为\ \answer[38mm]{}.
+  \item 若袋子中有 16 个黑球、4 个白球，不放回地从中抽取 20 次，每次抽一个，则第 10 次抽到白球的概率为\ \answer[26mm]{}.
+  \item 设随机变量 $X\sim N(5,6^2)$，则 $P\{X=5\}=$\ \answer[26mm]{}.
+  \item 设 $A,B$ 为随机事件，$P(A)=0.7$，$P(A-B)=0.3$，则 $P(\overline{AB})=$\ \answer[26mm]{}.
+  \item 若相互独立的随机变量 $X$ 和 $Y$ 都服从参数为 3 的泊松分布，则 $D(X-5Y)=$\ \answer[26mm]{}.
+  \item 设二维随机变量 $(X,Y)$ 的概率密度为
+  \[
+    f(x,y)=\begin{cases}4.8y(2-x),&0\le x\le1,\ 0\le y\le x,\\0,&\text{其他},\end{cases}
+  \]
+  则边缘密度函数 $f_X(x)=$\ \answer[35mm]{}.
+\end{examquestions}
+
+\begin{examquestions}[resume]
+  \item 随机变量 $X$ 和 $Y$ 相互独立，则相关系数 $\rho_{XY}=$\ \answer[25mm]{}.
+  \item 若总体 $X$ 在 $(0,\theta)$ 上服从均匀分布，$X_1,X_2,\ldots,X_n$ 是 $X$ 的简单随机样本，则 $\theta$ 的矩估计量是\ \answer[32mm]{}.
+  \item 设 $X$ 服从 10 次独立重复射击命中目标的次数，每次射中目标的概率为 $0.4$，则 $E(X^2)=$\ \answer[25mm]{}.
+  \item 设 $X_1,X_2,\ldots,X_n$ 是取自正态总体 $N(\mu,\sigma^2)$ 的一个简单随机样本，其中 $\sigma^2$ 未知，则 $\mu$ 的置信水平为 $1-\alpha$ 的置信区间为\ \answer[36mm]{}.
+\end{examquestions}
+
+\exampart{三}{计算题}{本大题共 6 个小题，每道 10 分，共 60 分}
+\begin{examquestions}[resume]
+  \item 某工厂有两个车间生产同型号家用电器，第一车间的次品率为 $0.15$，第二车间的次品率为 $0.12$，两个车间的成品都混合堆放在一个仓库，假设第一、二车间生产的成品比例为 $2:3$。今有一客户从成品仓库中随机提一台产品，
+  \begin{enumerate}[label=（\arabic*）,leftmargin=2em,itemsep=1mm]
+    \item 求该产品合格的概率；（5 分）
+    \item 已知从成品仓库中随机提的一台产品是不合格品，问这件产品由哪个车间生产的可能性最大？（5 分）
+  \end{enumerate}
+
+  \item 某射手有 3 发子弹，射击一次命中的概率为 $\frac23$，如果命中就停止射击，否则一直独立射击到子弹用尽。$X$ 表示射击次数，求 $X$ 的分布率、分布函数以及数学期望。
+
+  \item 已知随机变量 $X$ 的概率密度函数为
+  \[
+    f(x)=\begin{cases}\dfrac{k}{\sqrt{1-x^2}},&-1<x<1,\\0,&\text{其他},\end{cases}
+  \]
+  \begin{enumerate}[label=（\arabic*）,leftmargin=2em,itemsep=1mm]
+    \item 求系数 $k$；（4 分）
+    \item 求 $P\left\{-\frac12<X<\frac12\right\}$。（6 分）
+  \end{enumerate}
+\end{examquestions}
+
+\newpage
+\begin{examquestions}[resume]
+  \item 二维随机变量 $(X,Y)$ 的联合分布律如下表所示：
+  \begin{center}
+    \begin{tabular}{|c|c|c|c|}\hline
+      \diagbox{$X$}{$Y$} & $0$ & $1$ & $2$\\ \hline
+      $-1$ & $0.15$ & $0.30$ & $0.35$\\ \hline
+      $-2$ & $0.05$ & $0.12$ & $0.03$\\ \hline
+    \end{tabular}
+  \end{center}
+  \begin{enumerate}[label=（\arabic*）,leftmargin=2em,itemsep=1mm]
+    \item 求关于 $X$ 和 $Y$ 的边缘分布律，判断 $X$ 与 $Y$ 是否相互独立；（6 分）
+    \item 求 $Z=X+Y$ 分布律。（4 分）
+  \end{enumerate}
+
+  \item 设某元件的使用寿命 $X$ 的概率密度函数为
+  \[
+    f(x)=\begin{cases}2e^{-2(x-\theta)},&x>\theta,\\0,&x\le\theta,\end{cases}
+  \]
+  其中 $\theta>0$ 为未知参数，设 $x_1,x_2,\ldots,x_n$ 是取自总体 $X$ 的一组样本观测值，求未知参数 $\theta$ 的极大似然估计值。
+
+  \item 某食盐工厂用自动包装机包装食盐，额定标准为每袋净重 $0.5\,\mathrm{kg}$。设包装机称得食盐重量 $X$ 服从正态分布 $N(\mu,0.015^2)$，为检验某台包装机的工作是否正常，随机抽取包装的食盐 9 袋，称得并计算得到样本的平均净重为 $0.5110\,\mathrm{kg}$，则在显著性水平 $\alpha=0.01$ 下，该包装机的工作是否正常？
+  \[
+    (z_{0.01}=2.33,\ z_{0.005}=2.57,\ t_{0.01}(8)=2.89,\ t_{0.005}(8)=3.35)
+  \]
+\end{examquestions}
+
+\end{document}

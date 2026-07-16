@@ -1,0 +1,116 @@
+\documentclass{cqutest}
+
+\university{学校名称}
+\semester{20XX～20XX学年第X学期}
+\department{开课学院名称}
+\course{课程名称（类别）}
+\examtype{闭卷}
+\examtime{XXX}
+\papertype{X}
+
+\begin{document}
+
+\enablewatermark % 注释本行可编译无水印版
+
+\exampart{一}{选择题}{本题共 10 个小题，每小题 2 分，共 20 分}
+\begin{examquestions}
+  \item \placeholder{选择题题干：在此输入条件、已知量和所求结论}\choiceanswer{A}
+    \choices{\placeholder{选项 A}}{\placeholder{选项 B}}{\placeholder{选项 C}}{\placeholder{选项 D}}
+
+  \item \placeholder{较长的选择题题干，可在这里放置一至两行文字，用于演示题干换行时的版式}\choiceanswer{B}
+    \choices{\placeholder{较长选项 A}}{\placeholder{较长选项 B}}{\placeholder{较长选项 C}}{\placeholder{较长选项 D}}
+
+  \item \placeholder{可包含专业符号、术语或简短公式的题干}，例如\placeholder{示例表达}\choiceanswer{C}
+    \choices{\placeholder{选项 A}}{\placeholder{选项 B}}{\placeholder{选项 C}}{\placeholder{选项 D}}
+
+  \item \placeholder{选择题题干}，根据\placeholder{给定材料或条件}判断\placeholder{正确结论}\choiceanswer{D}
+    \choices{\placeholder{结论 A}}{\placeholder{结论 B}}{\placeholder{结论 C}}{\placeholder{结论 D}}
+
+  \item \placeholder{较长题干：请在此替换实际内容，并按需要保留一行或两行的长度}\choiceanswer{A}
+    \choices{\placeholder{较长选项 A}}{\placeholder{较长选项 B}}{\placeholder{较长选项 C}}{\placeholder{较长选项 D}}
+
+  \item \placeholder{选择题题干，本题将在下一页继续显示选项}\choiceanswer{B}
+\end{examquestions}
+
+\newpage
+\noindent\hspace*{6mm}\begin{minipage}{\dimexpr\linewidth-6mm\relax}
+  \choices{\placeholder{选项 A}}{\placeholder{选项 B}}{\placeholder{选项 C}}{\placeholder{选项 D}}
+\end{minipage}
+\begin{examquestions}[resume]
+  \item \placeholder{选择题题干：如有需要，可在此放置多行公式、代码或定义}\choiceanswer{C}
+    \choices{\placeholder{选项 A}}{\placeholder{选项 B}}{\placeholder{选项 C}}{\placeholder{选项 D}}
+
+  \item \placeholder{选择题题干：可用于公式、定义或性质判断}\choiceanswer{D}
+    \choices{\placeholder{选项 A}}{\placeholder{选项 B}}{\placeholder{选项 C}}{\placeholder{选项 D}}
+
+  \item \placeholder{较长选择题题干，可在此输入背景、术语、数据或其他已知条件}\choiceanswer{A}
+    \choices{\placeholder{选项 A}}{\placeholder{选项 B}}{\placeholder{选项 C}}{\placeholder{选项 D}}
+
+  \item \placeholder{选择题题干，将题目条件和待判断内容写在此处}\choiceanswer{B}
+    \choices{\placeholder{选项 A}}{\placeholder{选项 B}}{\placeholder{选项 C}}{\placeholder{选项 D}}
+\end{examquestions}
+
+\exampart{二}{填空题}{本大题共 10 个小题，每空 2 分，共 20 分}
+\begin{examquestions}[resume]
+  \item \placeholder{填空题题干，请在此输入条件}，则\placeholder{待求结果}为\ \answer[24mm]{\placeholder{答案}}.
+  \item \placeholder{填空题题干，可包含中英文术语、符号或简短公式}，则\ \answer[24mm]{\placeholder{答案}}.
+  \item \placeholder{较长的填空题题干，用来检查换行与空白线对齐情况}，所求结果为\ \answer[24mm]{\placeholder{答案}}.
+  \item \placeholder{填空题题干，本题在下一页继续}，已知量为
+\end{examquestions}
+
+\newpage
+\vspace*{2mm}
+\noindent\hspace*{4mm}\placeholder{此处填写续行内容}，则\placeholder{待求结果}为\ \answer[24mm]{\placeholder{答案}}.
+\begin{examquestions}[resume]
+  \item \placeholder{填空题题干，可附表格、图示或专业符号}，则\ \answer[24mm]{\placeholder{答案}}.
+  \item \placeholder{填空题题干，给定相关材料或数据}，则\ \answer[24mm]{\placeholder{答案}}.
+  \item \placeholder{填空题题干，请填写对应的概念、结果或步骤}，答案为\ \answer[24mm]{\placeholder{答案}}.
+  \item \placeholder{较长填空题题干，请在此输入背景、条件和相互关系}，则\ \answer[24mm]{\placeholder{答案}}.
+  \item \placeholder{填空题题干，已知必要条件}，则\placeholder{待填内容}为\ \answer[20mm]{\placeholder{答案}}.
+  \item \placeholder{较长填空题题干，可在此输入案例、材料和限定条件}，结果为\ \answer[31mm]{\placeholder{答案}}.\\
+    （注：\placeholder{必要的附表数值或题目说明}）
+\end{examquestions}
+
+\exampart{三}{综合题}{本大题共 6 个小题，每道 10 分，共 60 分}
+\begin{examquestions}[resume]
+  \item \placeholder{综合题题干：请在此输入背景、已知条件与任务要求，题干可自然换行}。
+  \item \placeholder{综合题题干：可包含概念、数据、图表、公式或其他专业符号，并列出一至两个小问}。
+  \item \placeholder{综合题题干：如有需要，可在此放置多行公式或其他专业表达}
+    \[
+      f(x)=\begin{cases}
+        \mathrm{expr}_1,&\text{case 1},\\
+        \mathrm{expr}_2,&\text{case 2},\\
+        \mathrm{other},&\text{otherwise}.
+      \end{cases}
+    \]
+    \placeholder{在此输入额外条件}，求：（1）\placeholder{小问一}；（2）\placeholder{小问二}。
+\end{examquestions}
+
+\newpage
+\begin{examquestions}[resume,topsep=0pt]
+  \item \placeholder{综合题题干：表格型已知条件如下}：
+    \begin{center}
+      \renewcommand{\arraystretch}{1.35}
+      \begin{tabular}{|c|c|c|c|}\hline
+        \diagbox{$X$}{$Y$} & $y_1$ & $y_2$ & $y_3$ \\ \hline
+        $x_1$ & $p_{11}$ & $p_{12}$ & $p_{13}$ \\ \hline
+        $x_2$ & $p_{21}$ & $p_{22}$ & $p_{23}$ \\ \hline
+      \end{tabular}
+    \end{center}
+    （1）\placeholder{小问一}；\\[4mm]
+    （2）\placeholder{小问二}；\\[4mm]
+    （3）\placeholder{小问三}。
+
+  \item \placeholder{综合题题干}，已知\placeholder{相关表达式或条件}
+    $f(x,\theta)=\begin{cases}
+      g(x;\theta),&x\in\mathcal D,\\
+      0,&\text{其他},
+    \end{cases}$
+    其中\placeholder{符号或术语}表示\placeholder{相应含义}。\\[3mm]
+    \placeholder{在此输入已知条件与需要完成的问题}。
+
+  \item \placeholder{综合题题干：请在此放置较长的应用题背景，包括任务要求、给定材料、数据与需要完成的问题}。\\[3mm]
+    （\placeholder{在此给出必要的图表说明、附表数值或补充材料}）
+\end{examquestions}
+
+\end{document}
