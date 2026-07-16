@@ -1,0 +1,111 @@
+\documentclass{cqutthesis}
+
+\enablewatermark % 注释本行可编译无水印版
+
+% 封面信息
+\university{重庆理工大学}
+% 题目一般不超过 20 个汉字，必要时可使用副标题。
+\thesistitle{论文题目}
+\college{学院全称}
+\major{专业全称}
+\classinfo{班级全称}
+\authorname{学生姓名}
+\studentid{学号}
+\advisor{指导教师}
+\advisortitle{职称}
+\thesisdate{20XX 年 XX 月}
+
+\begin{document}
+
+\makecover
+\makecommitment
+
+% 目录和中英文摘要连续使用罗马数字页码，正文改用阿拉伯数字页码。
+\frontmatterstart
+\tableofcontents
+
+\makeabstract{
+% 中文摘要约 300 字，不放公式、图表和参考文献序号。
+本文围绕论文研究对象，概述研究背景、研究方法、主要工作与研究结论。摘要应独立成文，内容简明、准确，能够反映论文的核心内容。
+% 关键词填写 3--6 个，按外延由大到小排列，末尾不加标点。
+}{关键词一；关键词二；关键词三}
+
+\makeenglishabstract{
+This abstract briefly presents the research background, methods, main work, and conclusions of the thesis. It should be self-contained and accurately reflect the core contribution of the study.
+}{Keyword one, Keyword two, Keyword three}
+
+\mainmatterstart
+
+% 毕业论文正文原则上不少于 12000 字，各章均从新页开始。
+
+\chapter{绪论}
+\section{研究背景与意义}
+在此撰写研究背景、研究目的及研究意义。正文采用统一的段落格式，文献引用使用上标方括号数字表示\cite{sample-journal}。
+
+\section{国内外研究现状}
+在此归纳国内外相关研究，并说明本文的研究切入点。
+
+\section{研究内容与结构}
+在此概述论文的研究内容、技术路线与章节安排。
+
+\chapter{相关理论与研究方法}
+\section{理论基础}
+在此介绍与研究主题相关的理论基础。
+
+\subsection{基本概念}
+在此界定论文中的核心概念。
+
+\subsection{研究方法}
+在此说明所采用的研究方法、数据来源或实验设计。
+
+\chapter{分析与讨论}
+\section{研究结果}
+在此呈现研究结果，并结合研究问题进行分析。
+
+% 公式按章编号，例如本章首个公式为（3.1）。
+\begin{equation}
+  y = a + bx
+\end{equation}
+
+% 表题放在表格上方；学校规范采用三线表，表号形式为“表3-1”。
+\begin{table}[htbp]
+  \centering
+  \caption{示例表题}
+  \begin{tabular}{ccc}
+    \toprule
+    项目 & 指标一 & 指标二 \\
+    \midrule
+    示例 & 1 & 2 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+% 插图时将图题放在图片下方，图号形式为“图3.1”。
+% \begin{figure}[htbp]
+%   \centering
+%   \includegraphics[width=0.7\textwidth]{assets/your-figure.png}
+%   \caption{示例图题}
+% \end{figure}
+
+\section{讨论}
+在此讨论研究结果的含义、适用范围与局限性。
+
+\chapter{结论}
+在此总结论文的主要结论，并提出后续研究展望。
+
+\acknowledgements
+感谢指导教师、参与研究的人员以及在论文完成过程中提供帮助的单位和个人。
+
+\references
+\begin{thebibliography}{99}
+  % 毕业论文原则上不少于 15 篇，毕业设计不少于 10 篇；网络文献不计入上述数量。
+  % 按正文首次引用顺序排列，著录格式执行 GB/T 7714—2015，每条末尾使用句号。
+  \bibitem{sample-journal} 作者. 文献题名[J]. 期刊名称, 2026, 1(1): 1--10.
+  \bibitem{sample-book} 作者. 著作名称[M]. 出版地: 出版社, 2026.
+  \bibitem{sample-thesis} 作者. 学位论文题名[D]. 保存地: 保存单位, 2026.
+\end{thebibliography}
+
+\appendixchapter{补充材料}
+在此放置不宜纳入正文、但对论文完整性有帮助的材料。理工科附录依次使用“附录1”“附录2”等编号。
+
+\end{document}
