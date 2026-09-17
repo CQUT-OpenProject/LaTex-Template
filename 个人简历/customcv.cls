@@ -110,8 +110,32 @@
 
 \definecolor{highlightcolor}{RGB}{0, 82, 217}
 \RequirePackage{tikz}
+\RequirePackage{eso-pic}
 \pgfdeclarelayer{background}
 \pgfsetlayers{background,main}
+
+% =========================================================================
+% 水印设置
+% 默认启用水印；如需关闭，在 template.tex 中调用 \disablewatermark
+% =========================================================================
+\newif\ifcqutwatermark
+\cqutwatermarktrue
+\newcommand{\enablewatermark}{\cqutwatermarktrue}
+\newcommand{\disablewatermark}{\cqutwatermarkfalse}
+
+\AddToShipoutPictureBG{%
+  \begin{tikzpicture}[remember picture,overlay]
+    \ifcqutwatermark
+      \foreach \cqut@watermarky in {55mm,148mm,241mm}{%
+        \foreach \cqut@watermarkx in {38mm,105mm,172mm}{%
+          \node[rotate=35] at
+            ([xshift=\cqut@watermarkx,yshift=\cqut@watermarky]current page.south west)
+            {\includegraphics[width=72mm]{assets/watermark-logo.png}};%
+        }%
+      }%
+    \fi
+  \end{tikzpicture}%
+}
 
 % 荧光笔划线样式
 \newcommand{\highlight}[1]{%
